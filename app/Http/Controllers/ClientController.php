@@ -19,7 +19,9 @@ class ClientController extends Controller
                 $from = Carbon::createFromFormat('d/m/Y', $dates[0]);
                 $to = Carbon::createFromFormat('d/m/Y', $dates[1]);
 
-                return $query->whereDate('created_at', '>=', $from)->whereDate('created_at', '<=', $to);
+                return $query->orderBy('created_at')
+                    ->whereDate('created_at', '>=', $from)
+                    ->whereDate('created_at', '<=', $to);
             });
         }])->get();
 
