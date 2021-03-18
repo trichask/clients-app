@@ -34,6 +34,9 @@
                     <li class="nav-item active">
                         <a class="nav-link text-primary" href="{{ route('clients') }}">Clients</a>
                     </li>
+                    <li class="nav-item active">
+                        <a class="nav-link text-primary" href="{{ route('payments') }}">Payments</a>
+                    </li>
                 </ul>
             </div>
         </div>

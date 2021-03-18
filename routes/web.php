@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ClientController;
+use App\Http\Controllers\PaymentController;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,3 +20,4 @@ Route::get('/', function () {
 });
 
 Route::get('/clients', [ClientController::class, 'index'])->name('clients');
+Route::get('/payments', [PaymentController::class, 'index'])->name('payments');
