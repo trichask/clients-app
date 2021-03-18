@@ -21,7 +21,7 @@ class ClientPaymentsExport implements FromCollection, WithHeadings, WithMapping
     {
         return Client::with(['payments' => function($query) {
             return $query->whereDate('created_at', '>', Carbon::now()->subDays($this->dayRange));
-        }])->get();
+        }])->orderBy('created_at')->get();
     }
 
     public function headings(): array

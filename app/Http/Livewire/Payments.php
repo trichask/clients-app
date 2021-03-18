@@ -18,7 +18,7 @@ class Payments extends Component
                     $searchTerm = "%{$this->search}%";
                     return $query->where('name', 'like', $searchTerm)->orWhere('surname', 'like', $searchTerm);
                 });
-            })->get()
+            })->orderBy('created_at')->get()
         ]);
     }
 }
