@@ -20,7 +20,7 @@
                 <tr>
                     <td>{{ $payment->client->full_name }}</td>
                     <td class="text-info">{{ $payment->amount }}</td>
-                    <td>{{ $payment->created_at->format('d/m/y H:i:s') }}</td>
+                    <td>{{ $payment->created_at->format('d/m/Y H:i:s') }}</td>
                 </tr>
             @endforeach
         </tbody>
