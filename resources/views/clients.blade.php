@@ -38,7 +38,7 @@
             <div class="form-group">
                 <label for="payments-date-range">Payments Date Range</label>
                 <input id="payments-date-range" name="date_range" type="text" class="form-control">
-                <small class="form-text text-muted">Date format: d/m/Y</small>
+                <small class="form-text text-muted">Date range format: d/m/Y - d/m/Y</small>
             </div>
             <input type="submit" class="btn btn-primary">
             <a href="{{ route('clients') }}" class="btn btn-secondary" style="margin-left: 5px">Clear</a>
